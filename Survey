@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Gaming Survey</h1>
+        <p>We value your feedback! Please take a few minutes to complete our survey.</p>
+    </header>
+
+    <form id="gaming-survey" action="#" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="10" max="100" required placeholder="Enter your age">
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+                <option value="prefer-not-to-say">Prefer not to say</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Gaming Preferences</legend>
+
+            <label for="platform">Preferred Gaming Platform:</label>
+            <select id="platform" name="platform" required>
+                <option value="">Select your platform</option>
+                <option value="pc">PC</option>
+                <option value="console">Console</option>
+                <option value="mobile">Mobile</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label>Favorite Game Genre:</label>
+            <input type="checkbox" id="action" name="genre" value="Action">
+            <label for="action">Action</label>
+
+            <input type="checkbox" id="rpg" name="genre" value="RPG">
+            <label for="rpg">RPG</label>
+
+            <input type="checkbox" id="strategy" name="genre" value="Strategy">
+            <label for="strategy">Strategy</label>
+
+            <input type="checkbox" id="sports" name="genre" value="Sports">
+            <label for="sports">Sports</label>
+
+            <input type="checkbox" id="simulation" name="genre" value="Simulation">
+            <label for="simulation">Simulation</label>
+
+            <label for="hours">Average Hours Spent Gaming Per Week:</label>
+            <input type="number" id="hours" name="hours" min="0" max="168" required placeholder="Enter hours">
+        </fieldset>
+
+        <fieldset>
+            <legend>Feedback</legend>
+
+            <label for="rating">How would you rate your overall gaming experience?</label>
+            <input type="range" id="rating" name="rating" min="1" max="10">
+
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Share your thoughts"></textarea>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <footer>
+        <p>&copy; 2024 Gaming Survey. All rights reserved.</p>
+    </footer>
+</body>
+</html>
